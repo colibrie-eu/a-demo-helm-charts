@@ -1,5 +1,19 @@
 image:
   tag: sha-4739ecf
+ingress:
+  enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  className: nginx
+  hosts:
+    - host: a-demo-service-staging.colibrie.eu
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: a-demo-service-staging.colibrie.eu-tls
+      hosts:
+        - a-demo-service-staging.colibrie.eu
 livenessProbe:
   httpGet:
     path: /
