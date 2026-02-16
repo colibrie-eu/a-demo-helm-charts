@@ -16,3 +16,10 @@ readinessProbe:
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 3
+resources:
+  requests:
+    cpu: "10m"
+    memory: "96Mi"
+  limits:
+    cpu: "100m"
+    memory: "192Mi"
