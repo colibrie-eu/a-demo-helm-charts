@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  a-demo-service:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-16T16:15:29.196050971Z"
+    description: Demo Service Helm chart for Kubernetes
+    digest: f2e8cdb7ea7734f526d101dae59374286b7d7cbc8618187c45a7d0bdca2de908
+    name: a-demo-service
+    type: application
+    urls:
+    - https://github.com/colibrie-eu/a-demo-helm-charts/releases/download/a-demo-service-0.1.0/a-demo-service-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-02-16T16:15:29.196056612Z"
